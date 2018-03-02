@@ -16,7 +16,7 @@ $To = "gabi@agabiabreu.com";
 $uglySubject = "[Site | Contato]";
 $Subject='=?UTF-8?B?'.base64_encode($uglySubject).'?=';
 
-$Body .= "<html><body style='width: 690px'><b>$nome</b> e <b>$email</b> </body></html>";
+$Body .= "$nome e $email";
 
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-Transfer-Encoding: 8bit" . "\r\n";
