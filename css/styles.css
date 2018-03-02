@@ -14,12 +14,12 @@
 .element-card {
 /*  width: 17em; */
   margin: 17px;
-  background-color: none;
+  background-color: transparent;
 }
 
 .element-card > .mdc-card__media {
   height: 7em;
-  
+  background-color: transparent;
  
 }
 
