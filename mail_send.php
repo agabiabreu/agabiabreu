@@ -1,44 +1,40 @@
 <?php
 
-	
-	//Variaveis de POST, Alterar somente se necessário 
-	//====================================================
-	$nome = $_POST['nome'];
-	$email = $_POST['email'];
+$error = "";
 
-	//====================================================
-	
-	//REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
-	//==================================================== 
-	$email_remetente = "gabi@agabiabreu.com"; // deve ser uma conta de email do seu dominio 
-	//====================================================
-	
-	//Configurações do email, ajustar conforme necessidade
-	//==================================================== 
-	$email_destinatario = "gabi@agabiabreu.com"; // pode ser qualquer email que receberá as mensagens
-	$email_reply = "$email"; 
-	$email_assunto = "Contato formmail"; // Este será o assunto da mensagem
-	//====================================================
-	
-	//Monta o Corpo da Mensagem
-	//====================================================
-	$email_conteudo = "Nome = $nome \n"; 
-	$email_conteudo .= "Email = $email \n";
+$nome = $_POST["nome"];
 
-	//====================================================
-	
-	//Seta os Headers (Alterar somente caso necessario) 
-	//==================================================== 
-	$email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
-	//====================================================
-	
-	//Enviando o email 
-	//==================================================== 
-	if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){ 
-					echo "</b>E-Mail enviado com sucesso!</b>"; 
-					} 
-			else{ 
-					echo "</b>Falha no envio do E-Mail!</b>"; } 
-	//====================================================
+//email
+if (empty($_POST["email"])) {
+    $error .= "Email is required ";
+} else {
+    $email = $_POST["email"];
+}
 
+ 
+$To = "gabi@agabiabreu.com";
+$uglySubject = "[Site | Contato]";
+$Subject='=?UTF-8?B?'.base64_encode($uglySubject).'?=';
+
+$Body .= "<html><body style='width: 690px'><b>$nome</b> e <b>$email</b> </body></html>";
+
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-Transfer-Encoding: 8bit" . "\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
+$headers .= "From: $email" . "\r\n";
+ 
+// send email
+$success = mail($To, $Subject, $Body, $headers);
+ 
+// redirect to success page
+if ($success && $error == ""){
+   echo "success";
+}else{
+    if($error == ""){
+        echo "Algo deu errado... Mas deu errado num nível, que é melhor você nos ligar no telefone (21) 3490-9292, porque pelo site vai ser difícil.";
+    } else {
+        echo $error;
+    }
+}
+ 
 ?>
