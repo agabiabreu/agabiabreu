@@ -1,0 +1,19 @@
+html, body, #fullpage, .mdc-layout-grid, .mdc-layout-grid__inner{height: 100%}
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,300,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
+
+/* NATIVO */
+
+body {margin: 0}
+
+video{
+    position: absolute; top: 50%; left: 50%;
+    min-width: 100%; width: auto;
+    transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}

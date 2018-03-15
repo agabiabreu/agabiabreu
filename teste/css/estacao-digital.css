@@ -1,0 +1,112 @@
+/* ESTAÇÃO DIGITAL */
+
+@media screen and (min-width: 768px){ .ed-hide__desktop{ display: none !important } }
+@media screen and (max-width: 768px){ .ed-hide__mobile{ display: none !important } }
+
+.ed-hide{display: none}
+.ed-unhide{transition-duration: .5s; opacity: 1 !important}
+
+.ed-cyan{color: #00adee !important;}
+.ed-cyan__bg{background-color: #00adee}
+.ed-yellow{color: #fff100 !important;}
+.ed-yellow__bg{background-color: #fff100}
+.ed-magenta{color: #eb008b !important;}
+.ed-magenta__bg{background-color: #eb008b}
+.ed-black{color: #000010 !important;}
+.ed-black__bg{background-color: #000010}
+
+.ed-header{
+    position: absolute;
+    padding-top: 24px;
+    background-color: transparent;
+    transition-duration: .5s;
+    z-index: 999;
+}
+
+.ed-header .mdc-toolbar__section{height: auto; padding: 0}
+.ed-header button{background-color: transparent}
+.ed-header--toolbar__title {transition-duration: .5s; opacity: 0; position: absolute; font-weight: 200}
+.ed-header--toolbar__social {transition-duration: .5s; opacity: 0; position: absolute; right: 0}
+
+.ed-header__bg{
+    transition-duration: .5s;
+    background-color: black;
+    padding: 0;
+    min-height: auto
+}
+.ed-header__bg .mdc-toolbar__row{min-height: auto;}
+
+.ed-header--tab .mdc-tab:not(.mdc-tab---active) {color: rgba(255,255,255,0.5)}
+.ed-header--tab .mdc-tab.mdc-tab--active, .ed-header--tab .mdc-tab:hover {color: rgba(255,255,255,0.7)}
+.ed-main{background-color: #333333;}
+
+#ed-main__bg{position: absolute; opacity: 0.4; z-index: -1}
+
+.ed-home.mdc-menu{background-color: rgba(255,255,255,0.7)}
+
+.ed-home,
+.ed-home--panels,
+.ed-home--panels__panel{
+    height: 100%
+}
+.ed-home--panels__panel{display: none;}
+.ed-home--panels__panel.active{
+    display: block;
+    max-height: -webkit-fill-available;
+    overflow: overlay
+}
+
+.ed-home--panels__panel.active#QuemSomos,
+.ed-home--panels__panel.active#Servicos,
+.ed-home--panels__panel.active#Fizemos{
+    background-color: rgba(255,255,255,1);
+}
+
+.ed-quemsomos hr,
+.ed-servicos hr{
+    width: 10%;
+    margin-left: 0;
+    border-style: solid;
+    border-width: 2px;
+}
+
+
+.ed-home__mouse{
+    display: block;
+    width: 26px;
+    height: 46px;
+    border-radius: 13px;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    z-index: 99999;
+}
+
+.ed-home__mouse span{
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+    display: block;
+    margin: 7px auto;
+    width: 2px;
+    height: 6px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+.ed-card--content__text{
+    padding: 1rem;
+    text-decoration: none
+}
+
+.ed-card__media-title{
+    padding: 8px 16px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    color: white;
+}
+
+.ed-pagseguro{text-align: center;}
+.ed-pagseguro img{width: auto; max-width: calc(100% - 32px); height: auto}

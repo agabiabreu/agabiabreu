@@ -1,0 +1,257 @@
+/* HOME */
+
+.ed-home__bg--overlay{background-image: url(../images/remo_w-ed-home__bg--overlay.png)}
+
+.ed-home__button--menu{
+    height: 7rem;
+    text-align: left;
+}
+
+.ed-home__button--menu--text, .ed-home__button--menu--hover{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-weight: 900;
+    display: block
+}
+
+.ed-home__button--menu--text{
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+}
+
+.ed-home__button--menu--hover{
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+
+.ed-home__phone{
+    display: block;
+    width: 22px;
+    height: 38px;
+    border-radius: 3px;
+    border-width: 4px 2px;
+    border-style: solid;
+    border-color: #fff;
+    position: absolute;
+    bottom: 34px;
+    left: 12.5%;
+    z-index: 99999;
+}
+
+.ed-home__phone span{
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+    display: block;
+    margin: 20px auto;
+    width: 3px;
+    height: 6px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+.ed-home--panels__panel--header{
+    background-position: center;
+    background-size: cover;
+    background-color: var(--mdc-theme-primary);
+    margin: 0 0 24px 0
+}
+
+#QuemSomos .ed-home--panels__panel--header,
+#Servicos .ed-home--panels__panel--header{
+    margin-bottom: 0
+}
+
+.ed-home--panels__panel--header__title{text-align: center}
+.ed-home--panels__panel--content{margin-top: -24px; padding: 0 24px 24px 24px; background-color: white}
+
+/* QUEM SOMOS */
+
+.ed-quemsomos{}
+
+#QuemSomos .ed-home--panels__panel--header{background-image: url(../images/quemsomos/remow_ed-quemsomos--fig__2.jpg); background-blend-mode: multiply;}
+
+.ed-quemsomos--estrutura .mdc-card{width: 100%; margin-bottom: 24px}
+.ed-quemsomos--estrutura--card h3{margin-bottom: 0}
+.ed-quemsomos--estrutura--card h4{margin-top: 0}
+.ed-quemsomos--estrutura--card__versa{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__RolandVersaUV.jpg);}    
+.ed-quemsomos--estrutura--card__xc540{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__RolandXC540.jpg);}
+.ed-quemsomos--estrutura--card__targaxt{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__TargaXT.jpg);}
+.ed-quemsomos--estrutura--card__newtarga{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__NewTarga.jpg);}
+.ed-quemsomos--estrutura--card__xf640{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__RolandXF640.jpg);}
+
+
+/* SERVIÇOS */
+
+#Servicos .ed-home--panels__panel--header{background-image: url(../images/quemsomos/remow_ed-quemsomos--fig__2.jpg); background-blend-mode: multiply;}
+.ed-servicos--haeder__bg{position: absolute; opacity: 1; z-index: 1}
+.ed-servicos .ed-home--panels__panel--header .mdc-button{margin: 6px}
+.ed-servicos p.mdc-typography--display1{line-height: 1.5}
+
+.ed-servicos--card__impressao{background-image: url(../images/servicos/remow_ed-servicos--impressao.jpg);}
+.ed-servicos--card__recorte{background-image: url(../images/servicos/remow_ed-servicos--recorte.jpg);}
+.ed-servicos--card__instalacao{background-image: url(../images/galeria/adesivo/big/remow_ed-adesivo--gal--freezer__big.jpg);}
+
+/* FIZEMOS */
+
+.mdc-layout-grid__inner.ed-fizemos{height: auto}
+
+.ed-fizemos--gallery--card__1 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--botafogo__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__2 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--comlurb__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__3 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--criare__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__4 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--diversao__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__5 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--docealegria__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__6 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--fgv__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__7 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--fitbox__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__8 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--freezer__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__9 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--gelfruta__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__10 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--obaoba2__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__11 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--obaoba__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__12 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--oly2016__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__13 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--saopaulo__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__14 {background-image: url(../images/galeria/placa/thumb/remow_ed-placa--gal--mexicano__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__15 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--chao__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__16 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--drogaetica__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__17 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--festa__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__18 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--festmimo__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__19 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--nycc__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__20 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--uci__thumb.jpg); background-size: cover}
+.ed-fizemos--gallery--card__21 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--znorte__thumb.jpg); background-size: cover}
+
+
+/* CONTATO */
+
+.ed-contato{
+    background-color: rgba(0,0,0,0.5)
+}
+
+.ed-contato h2, .ed-contato h4, .ed-contato h5{margin-bottom: 0}
+.ed-contato h3{margin-top: 0}
+
+.ed-contato .mdc-layout-grid__inner{height: auto}
+.ed-contato .mdc-card{margin-bottom: 16px}
+
+.ed-contato--map{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1;
+}
+.ed-contato .mdc-fab {background: var(--mdc-theme-primary)}
+
+/* DESTAQUE */
+
+.ed-destaques--menu{
+    position: fixed; left: 24px;
+    height: 100%; width: auto;
+    z-index: 99;
+}
+.ed-destaques--menu span{
+    position: absolute; top: 50%;
+    transform: translateY(-50%);
+}
+.ed-destaques--menu button{
+    margin-bottom: 8px
+}
+
+.ed-destaques--menu button{display: block}
+
+.ed-destaque__title {margin: 0}
+.ed-destaque__subtitle {margin-top: 0} 
+.ed-destaque--card__right{background-color: rgba(255,255,255,0.85)}
+.ed-destaque__preco {text-transform: initial}
+
+/* LONAS */
+
+.ed-destaque--lonas{
+    background-image: url(../images/remow_ed-lona--bg.jpg);
+    background-color: #00adee;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-position: center;
+}
+.ed-destaque--lonas--gallery--card__1 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--znorte__thumb.jpg); background-size: cover}
+.ed-destaque--lonas--gallery--card__2 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--festmimo__thumb.jpg); background-size: cover}
+.ed-destaque--lonas--gallery--card__3 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--uci__thumb.jpg); background-size: cover}
+.ed-destaque--lonas--gallery--card__4 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--drogaetica__thumb.jpg); background-size: cover}
+.ed-destaque--lonas--gallery--card__5 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--nycc__thumb.jpg); background-size: cover}
+.ed-destaque--lonas--gallery--card__6 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--uci__thumb.jpg); background-size: cover}
+
+/* ADESIVOS */
+
+.ed-destaque--adesivos{
+    background-image: url(../images/remow_ed-adesivo--bg.jpg);
+    background-color: #fff100;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center
+}
+
+
+/* PLACAS */
+
+.ed-destaque--placas{
+    background-image: url(../images/remow_ed-adesivo--bg.jpg);
+    background-color: #eb008b;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-position: center
+}
+
+/* FORMULÁRIO DE PEDIDO */
+
+.ed-pedido form.mdc-layout-grid__inner{height: auto}
+
+.ed-pedido {
+    height: 100%; width: 100%;
+    position: absolute; top: 0; left: 0;
+    background: white;
+    padding-left: 8.33%; padding-right: 8.33%;
+    overflow: auto;
+}
+
+.ed-pedido h2, .ed-pedido h4, .ed-pedido h5{margin-bottom: 0}
+.ed-pedido h3{margin-top: 0}
+
+/*    .ed-pedido--panels{border: solid 1px #ccc; border-radius: 8px}*/
+.ed-pedido--panels__panel{display: none;}
+.ed-pedido--panels__panel.active{display: grid}
+.ed-pedido--panels button {width: 100%}
+.ed-pedido--lona--button__anexo{padding-top: 20px}
+.ed-pedido--preco{
+    width: 100%;
+    margin-left: -8.33%;
+    background-color: rgba(255,255,255,0.85);
+    position: fixed;
+    bottom: 0;
+    padding-left: 8.33%; padding-right: calc(8% + 24px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

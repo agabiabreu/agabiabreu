@@ -1,0 +1,12 @@
+/* PhotoSwipe */
+
+.ed-gallery__format{display: inline-flex}
+.ed-gallery figcaption{display: none}
+.ed-gallery img{display: none}
+.ed-gallery--card__title{
+    padding: 8px 16px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    color: white;
+}
+.ed-gallery--card{background-position: center}
